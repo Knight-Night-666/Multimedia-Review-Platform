@@ -1,5 +1,57 @@
-# MovieApi_CourseProj
+# Movie Review Platform
 
-### Start the Movies backend on port 8080 and use ngrok to expose that port.
+This is a full-stack web application that allows users to browse movies, watch trailers, publish text reviews, and read reviews written by others. 
 
-### in the front end, go to the api folder and add the ngrok link to allow api calls to be made using that base url. use npm start to run the front end. Very basic front end, changes made to the reviews will just be added to the database (you could check the status of response might add feature to show all reviews if time permits.)
+## Features
+
+- Browse movie catalog with details like title, genre, release year, etc.
+- Play movie trailers and teasers embedded from YouTube
+- Publish text reviews on movies and rate them on a 5-star scale 
+- Like/dislike reviews written by other members
+- View ratings and read reviews published for movies
+- RESTful APIs for movie and review management operations
+
+## Tech Stack
+
+**Frontend:** ReactJS 
+
+**Backend:** Spring Boot 
+
+**Database:** MongoDB
+
+## API Reference
+
+Base URL: `https://api.movie-reviews.com/`
+
+**Movies**  
+
+Get all movies  
+`GET /api/v1/movies`
+
+Get single movie 
+
+`GET /api/v1/movies/:movieId`
+
+**Reviews**
+
+Publish review   
+`POST /api/v1/reviews`
+
+## Deployment
+
+Automated using a CI/CD pipeline with:
+
+- Version Control: Git, GitHub
+- Build & Test: Maven, JUnit  
+- Containerization: Docker
+- Orchestration: Docker Compose
+- Configuration Management: Ansible
+
+## License
+
+This project is licensed under the MIT license - see [LICENSE](LICENSE) file for details.
+
+## Contributors
+
+- [Prakhar Rastogi](https://github.com/Knight-Night-666)
+- [Shreyansh Rai](https://github.com/shreyanshrai)
